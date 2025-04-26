@@ -1,0 +1,149 @@
+
+@import url(font.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+    text-decoration: none;
+    font-family: "Rubik-Regular";
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav__list-link{
+    color: black;
+    line-height: 19px;
+    padding: 30px 30px;
+    display: block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.nav__list-link:hover{
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
+
+.search{
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+
+.search__input{
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+    padding: 8px 0 8px 12px;
+    font-size: 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search__btn{
+    background: black;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 8px 17px;
+    font-size: 12px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.header{
+    background: url(../img/header__bg.png) no-repeat center/cover;
+    height: 100vh;
+    background-position: top;
+}
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+.header__content-title{
+    padding: 20px 0 10px;
+    font-size: 59px;
+    line-height: 70px;
+    font-family: "Rubik-SemiBold";
+}
+
+.header__content-text{
+    font-family: "Rubik-Light";
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.cards{
+    display: flex;
+}
+
+.cards__card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 25px 0;
+    transition: 0.5s;
+    color: white;
+}
+
+.cards__card:hover{
+    background: #6b4b6b;
+    cursor: pointer;
+}
+
+.cards__card-title{
+    padding: 24px;
+    font-family: "Rubik-SemiBold";
+    font-size: 18px;
+}
+
+.gear{
+    padding: 40px 0;
+}
+
+.gear__title{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+    line-height: 26px;
+    font-family: "Rubik-SemiBold";
+}
+
+.gear__text{
+    padding-bottom: 40px;
+}
+
+.gear__img{
+    width: 100%;
+}
